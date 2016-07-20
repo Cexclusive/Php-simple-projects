@@ -41,7 +41,7 @@
         <?php
         if (isset($_POST['num'])) {
             switch (1) {
-                case preg_match("/017(\d{8})/", $_POST['num']):
+                case $z = preg_match("/017(\d{8})/", $_POST['num']):
                     echo "Grameenphone = $_POST[num]";
                     break;
                 case $z = preg_match("/019(\d{8})/", $_POST['num']):
